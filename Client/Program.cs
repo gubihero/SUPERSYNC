@@ -14,7 +14,10 @@ namespace SuperSimpleSync
     {
         //reads into temp folder and reads in the TestSyncDir folder
        private DirectoryInfo LocalStorage = new System.IO.DirectoryInfo(@"C:\temp\TestSyncDir");
-
+       public DirectoryInfo getLocalStorage()
+       {
+           return LocalStorage;
+       }
        public void setLocalStorage(string p)
        {
 
